@@ -1,40 +1,37 @@
 "use client";
 import { Send, Bot, User, CircleDollarSign, BarChart3, Info } from "lucide-react";
 
-export default function FinBot() {
+export default function ShakaBot() {
   return (
     <div className="flex flex-col h-[600px] bg-white rounded-3xl border border-gray-100 shadow-sm overflow-hidden">
-      {/* Header */}
+
       <div className="p-4 border-b border-gray-50 flex items-center gap-3">
         <div className="w-10 h-10 bg-blue-50 rounded-xl flex items-center justify-center text-blue-600">
           <Bot className="w-6 h-6" />
         </div>
         <div>
-          <h3 className="font-bold text-gray-900 text-sm">FinBot Advisor</h3>
+          <h3 className="font-bold text-gray-900 text-sm">ShakaBot Advisor</h3>
           <p className="text-[10px] text-gray-400 uppercase tracking-widest font-semibold">Intelligent Financial Intelligence</p>
         </div>
       </div>
 
-      {/* Chat Area */}
       <div className="flex-1 overflow-y-auto p-6 space-y-6 bg-slate-50/30">
         <div className="text-center">
           <span className="text-[10px] font-bold text-gray-400 uppercase tracking-widest bg-white px-3 py-1 rounded-full border border-gray-100">Today, 14 October</span>
         </div>
 
-        {/* AI Message */}
         <div className="flex gap-3 max-w-[80%]">
           <div className="w-8 h-8 bg-blue-600 rounded-lg flex-shrink-0 flex items-center justify-center text-white">
             <Bot className="w-5 h-5" />
           </div>
           <div className="bg-white p-4 rounded-2xl rounded-tl-none shadow-sm border border-gray-100">
             <p className="text-sm text-gray-700 leading-relaxed">
-              Halo! Saya **FinBot**, asisten finansial cerdas Anda. Ada yang bisa saya bantu terkait investasi atau perencanaan keuangan Anda hari ini?
+              Halo! Saya ShakaBot, asisten finansial cerdas Anda. Ada yang bisa saya bantu terkait investasi atau perencanaan keuangan Anda hari ini?
             </p>
             <span className="text-[10px] text-gray-400 mt-2 block">09:00 AM • System Verified</span>
           </div>
         </div>
 
-        {/* User Message */}
         <div className="flex gap-3 justify-end">
           <div className="bg-blue-600 p-4 rounded-2xl rounded-tr-none shadow-md max-w-[80%]">
             <p className="text-sm text-white">Apa itu reksa dana?</p>
@@ -45,7 +42,6 @@ export default function FinBot() {
           </div>
         </div>
 
-        {/* AI Response with Card (Reksa Dana) */}
         <div className="flex gap-3 max-w-[90%]">
           <div className="w-8 h-8 bg-blue-600 rounded-lg flex-shrink-0 flex items-center justify-center text-white">
             <Bot className="w-5 h-5" />
@@ -81,19 +77,18 @@ export default function FinBot() {
         </div>
       </div>
 
-      {/* Input Area */}
       <div className="p-4 bg-white border-t border-gray-100">
         <div className="relative">
-          <input 
-            type="text" 
-            placeholder="Tanya tentang investasi, portofolio..." 
+          <input
+            type="text"
+            placeholder="Tanya tentang investasi, portofolio..."
             className="w-full bg-gray-50 border border-gray-200 rounded-2xl py-3 px-4 pr-12 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500/20 transition-all"
           />
           <button className="absolute right-2 top-1/2 -translate-y-1/2 w-8 h-8 bg-blue-600 rounded-xl flex items-center justify-center text-white hover:bg-blue-700 transition-colors">
             <Send className="w-4 h-4" />
           </button>
         </div>
-        <p className="text-[10px] text-center text-gray-400 mt-3">FinBot can make mistakes. Verify important financial decisions.</p>
+        <p className="text-[10px] text-center text-gray-400 mt-3">ShakaBot can make mistakes. Verify important financial decisions.</p>
       </div>
     </div>
   );

@@ -18,7 +18,7 @@ export default function MarketPulseChart() {
       <div className="flex justify-between items-start mb-8">
         <div>
           <h3 className="text-lg font-bold text-gray-900">Indeks Harga Saham Gabungan (IHSG)</h3>
-          <p className="text-sm text-gray-500">Real-time performance benchmark</p>
+          <p className="text-sm text-gray-500">Performa Real time IHSG</p>
         </div>
         <div className="text-right">
           <div className="text-3xl font-black text-gray-900">7,245.12</div>
@@ -35,23 +35,23 @@ export default function MarketPulseChart() {
                 <stop offset="95%" stopColor="#2563eb" stopOpacity={0}/>
               </linearGradient>
             </defs>
-            <XAxis 
-              dataKey="time" 
-              axisLine={false} 
-              tickLine={false} 
+            <XAxis
+              dataKey="time"
+              axisLine={false}
+              tickLine={false}
               tick={{fontSize: 10, fill: '#94a3b8'}}
               dy={10}
             />
-            <Tooltip 
+            <Tooltip
               contentStyle={{ borderRadius: '12px', border: 'none', boxShadow: '0 4px 12px rgba(0,0,0,0.05)' }}
             />
-            <Area 
-              type="monotone" 
-              dataKey="value" 
-              stroke="#2563eb" 
-              strokeWidth={3} 
-              fillOpacity={1} 
-              fill="url(#colorValue)" 
+            <Area
+              type="monotone"
+              dataKey="value"
+              stroke="#2563eb"
+              strokeWidth={3}
+              fillOpacity={1}
+              fill="url(#colorValue)"
             />
           </AreaChart>
         </ResponsiveContainer>

@@ -10,20 +10,19 @@ export default function HelpPage() {
 
   return (
     <div className="max-w-5xl mx-auto space-y-12 pb-20">
-      {/* Search Header */}
+
       <div className="text-center space-y-4">
         <h1 className="text-4xl font-black text-slate-900">Apa yang bisa kami bantu?</h1>
         <div className="relative max-w-2xl mx-auto">
           <Search className="absolute left-4 top-1/2 -translate-y-1/2 text-slate-400 w-5 h-5" />
-          <input 
-            type="text" 
-            placeholder="Cari topik bantuan (misal: 'cara tarik dana')" 
+          <input
+            type="text"
+            placeholder="Cari topik bantuan (misal: 'cara tarik dana')"
             className="w-full bg-white border border-slate-100 rounded-2xl py-4 pl-12 pr-4 shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500/20 transition-all"
           />
         </div>
       </div>
 
-      {/* Categories Grid */}
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
         {categories.map((cat, i) => (
           <div key={i} className="bg-white p-8 rounded-[32px] border border-slate-100 hover:border-blue-200 transition-all group cursor-pointer">
@@ -36,7 +35,6 @@ export default function HelpPage() {
         ))}
       </div>
 
-      {/* Support Section */}
       <div className="bg-blue-600 rounded-[40px] p-10 text-white flex flex-col md:flex-row items-center justify-between gap-8 shadow-xl shadow-blue-600/20">
         <div className="space-y-2">
           <h2 className="text-2xl font-bold">Masih butuh bantuan?</h2>
