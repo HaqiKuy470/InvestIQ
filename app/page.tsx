@@ -17,8 +17,8 @@ export default function LandingPage() {
 
         <div className="max-w-xl">
           <h1 className="text-7xl font-black text-slate-900 leading-[0.9] tracking-tighter">
-            Master your <br />
-            masa depan <span className="text-blue-600 italic">finansial</span> Anda.
+            Belajar, Analisis, dan Investasi — <br />
+            Semua dalam Satu <span className="text-blue-600 italic">Platform AI.</span>
           </h1>
           <p className="mt-8 text-xl text-slate-500 font-medium leading-relaxed">
             Pendamping Investasi Berbasis AI Anda. Bangun kekayaan dengan portofolio presisi dan kecerdasan pasar real-time.
@@ -59,12 +59,12 @@ export default function LandingPage() {
       <div className="hidden lg:flex flex-1 bg-slate-50 relative items-center justify-center p-12">
 
         <div className="absolute inset-0 opacity-[0.03] pointer-events-none"
-             style={{ backgroundImage: 'radial-gradient(#000 1px, transparent 1px)', backgroundSize: '32px 32px' }}>
+          style={{ backgroundImage: 'radial-gradient(#000 1px, transparent 1px)', backgroundSize: '32px 32px' }}>
         </div>
 
         <div className="absolute top-12 right-12 flex items-center gap-2 bg-white/80 backdrop-blur-md border border-slate-200 px-4 py-2 rounded-full shadow-sm">
-           <div className="w-2 h-2 bg-emerald-500 rounded-full animate-pulse"></div>
-           <span className="text-[10px] font-black text-slate-600 uppercase tracking-widest">Buku Besar Global Aktif</span>
+          <div className="w-2 h-2 bg-emerald-500 rounded-full animate-pulse"></div>
+          <span className="text-[10px] font-black text-slate-600 uppercase tracking-widest">Buku Besar Global Aktif</span>
         </div>
 
         <div className="relative w-full max-w-lg">
